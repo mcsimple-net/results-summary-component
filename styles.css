@@ -21,25 +21,28 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
+    
 }
 
 body{
     min-height: 100vh;
-    display: flex;
-    
+    position: relative;
     align-items: center;
     justify-content: center;
     background-color: var(--Pale-blue);
+    display: flex;
 }
 .card{
     box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
     border-radius: 2rem;
     width: 650px;
     background-color: var(--White);
+    
 }
 .card-container{
     display: flex;
     justify-content: space-between;
+    
 }
 .result{
     width: 50%;
@@ -164,6 +167,8 @@ button:hover{
     }
     .card{
         box-shadow: none;
+        position: relative;
+        z-index: 2;
     }
     .card-container{
         flex-direction: column;
@@ -178,11 +183,8 @@ button:hover{
     .summary{
         width: 100%;
     }
-    .attribution{
-        margin:auto;
-    }
-
+    
 }
 
-.attribution { font-size: 11px; text-align: center; margin-top: 2%;}
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: -1rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
